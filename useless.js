@@ -7,6 +7,7 @@ function uselessWebButton(button, popup) {
 	var sitesList = [
     "http://endless.horse/",
     "https://longdogechallenge.com/",
+    "https://alwaysjudgeabookbyitscover.com",
 		"https://thatsthefinger.com/",
     "http://www.republiquedesmangues.fr/",
     "https://www.ihasabucket.com/",
