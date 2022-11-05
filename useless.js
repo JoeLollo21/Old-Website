@@ -4,43 +4,43 @@ function uselessWebButton(button, popup) {
 	var initialClick = false
 	var randomRange = 7
 
-	var sitesList = [
+var sitesList = [
     "http://endless.horse/",
     "https://longdogechallenge.com/",
     "https://alwaysjudgeabookbyitscover.com",
-		"https://thatsthefinger.com/",
+    "https://thatsthefinger.com/",
     "http://www.republiquedesmangues.fr/",
     "https://www.ihasabucket.com/",
     "https://binarypiano.com/",
     "http://eelslap.com/",
-		"http://corndog.io/",
+    "http://corndog.io/",
     "https://crouton.net/",
     "https://smashthewalls.com/",
-		"http://doughnutkitten.com/",
+    "http://doughnutkitten.com/",
     "http://www.staggeringbeauty.com/",
     "http://drawing.garden/",
     "https://theuselessweb.site/ducksarethebest.com/",
     "https://cursoreffects.com/",
     "http://www.koalastothemax.com/"
-		"http://burymewithmymoney.com/",
-		"http://www.partridgegetslucky.com/",
-		"http://www.ismycomputeron.com/",
+    "http://burymewithmymoney.com/",
+    "http://www.partridgegetslucky.com/",
+    "http://www.ismycomputeron.com/",
     "http://r33b.net/",
-		"http://www.amialright.com/",
-		"http://wowenwilsonquiz.com",
-		"https://thepigeon.org/",
+    "http://www.amialright.com/",
+    "http://wowenwilsonquiz.com",
+    "https://thepigeon.org/",
     "https://neal.fun/spend/",
     "https://neal.fun/who-was-alive/",
     "https://www.foxconn.com/en-us/",
     "https://www.tpusa.com/",
-		"http://www.patience-is-a-virtue.org/",
-		"http://pixelsfighting.com/",
-		"http://isitwhite.com/",
-		"http://corgiorgy.com/",
-		"https://www.bouncingdvdlogo.com/",
+    "http://www.patience-is-a-virtue.org/",
+    "http://pixelsfighting.com/",
+    "http://isitwhite.com/",
+    "http://corgiorgy.com/",
+    "https://www.bouncingdvdlogo.com/",
     "https://www.jesusishitler.net/",
-		"https://remoji.com/",
-		"https://findtheinvisiblecow.com/",
+    "https://remoji.com/",
+    "https://findtheinvisiblecow.com/",
     "https://www.cameronsworld.net/",
     "https://www.lingscars.com/",
     "https://www.art.yale.edu/",
@@ -53,28 +53,24 @@ function uselessWebButton(button, popup) {
     "http://www.themostamazingwebsiteontheinternet.com/",
     "https://www.yyyyyyy.info/",
     "https://www.arngren.net/"
-	]
+]
 
-	var sites = null
+var sites = null
 
-	// Prepares and binds the button
-	var init = function () {
-		button.onclick = onButtonClick
-
-		// Initial set sites
-		sites = sitesList.slice()
-
-		if (localStorage["currentSiteList"]) {
-			// They have storage, filter out any not in the base list, that could be spam now
-			var currentSites = JSON.parse(localStorage["currentSiteList"])
-			var filteredSites = currentSites.filter(
-				(site) => sitesList.indexOf(site) !== -1
-			)
-			if (filteredSites.length > 0) {
-				sites = filteredSites
-			}
+// Prepares and binds the button
+var init = function () {
+    button.onclick = onButtonClick
+    // Initial set sites
+    sites = sitesList.slice()
+    if (localStorage["sitesList"]) {
+	// They have storage, filter out any not in the base list, that could be spam now
+	var currentSites = JSON.parse(localStorage["sitesList"])
+	var filteredSites = currentSites.filter((site) => sitesList.indexOf(site) !== -1)
+		if (filteredSites.length > 0) {
+			sites = filteredSites
 		}
 	}
+    }
 
 	// Selects and removes the next website from the list
 	var selectWebsite = function () {
