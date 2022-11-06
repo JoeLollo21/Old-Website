@@ -1,5 +1,5 @@
-function uselessWebButton(button, popup) {
-	var buttonElement = button
+function uselessWebButton(a popup) {
+	var buttonElement = a
 	var popupElement = popup
 	var initialClick = false
 	var randomRange = 7
