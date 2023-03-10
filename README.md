@@ -1,2 +1,2 @@
-# chesspiece21.github.io
-My website.
+# Personal Website
+Code for my website.
