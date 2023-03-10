@@ -1,5 +1,5 @@
 # Hi, I'm Joe Lollo.
-Welcome to what I'd say is my corner of the Internet. I am a graduate student in the Master of Library and Information Science (MLIS) program at the University of Washington who went through puberty in early 2010s Seattle, leading me to be the Internet Expert™ I am today.
+I am a graduate student in the Master of Library and Information Science (MLIS) program at the University of Washington.
 <br><br>
 I am passionate about the digital humanities, and particularly using computational and open-source methods in DH scholarship and pedagogy. It is my hope that I can teach and research in this field as a career, after finishing graduate school.
 <br><br>
